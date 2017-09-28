@@ -1,0 +1,10 @@
+*AlertDialog alert=null;
+*LocationManager locManager=(LocationManager) getSystemService(LOCATION_SERVICE);
+*if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+AlertNoGPS();
+}
+
+<uses-permission>android:name="android.permission.ACCESS_FINE_LOCATION	"</usus-permission>
+
+
+
