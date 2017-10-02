@@ -1,0 +1,33 @@
+*AlertDialog alert=null;
+*LocationManager locManager=(LocationManager) getSystemService(LOCATION_SERVICE);
+*if(!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
+AlertNoGPS();
+}
+
+<uses-permission>android:name="android.permission.ACCESS_FINE_LOCATION	"</usus-permission>
+
+
+//Ocultar teclado
+
+InputMeManager miteclado= (InputMeManager)getService(INPUT_METHOD_SERVICE);
+miteclado.hideSoftInputFromWindow("dondeseesconde".getWindowToken,0);
+
+//Mandar informacion Ok -Teclado
+
+EventoTeclado teclado = new EventoTeclado()
+EditText variable = (EditText) findViewById(R.id."id")
+variable.setOnEditosActionListener(teclado);
+
+class EventoTeclado implements TextView.OnEditorActionListener{
+
+@override
+public boolean onEditoActon(TextView v,int actionId,KeyEvent event){
+if(actionId==EditorInfo.IME_ACTION_DONE){
+     "dondeseesconde"(null);
+}
+return false;
+}
+}
+
+
+

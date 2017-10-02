@@ -1,0 +1,23 @@
+//Gradle(module)
+compile 'com.google.firebase:firebase-ads:11.2.0'
+//Carpeta String 
+<string name="banner_ad_unit_id">ca-app-pub-45654654654(id banner)</string>
+//XMl
+ <com.google.android.gms." ".AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            " ":adSize="SMART_BANNER"
+            " ":adUnitId="Id del anuncio(banner)">
+        </com.google.android.gms.ads.AdView>
+
+//MainActivity
+
+mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+ 
